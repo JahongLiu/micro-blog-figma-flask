@@ -1,5 +1,5 @@
 # micro-blog
-frontend web project
+frontend web project 
 
 How to start a new project:
 
@@ -13,3 +13,7 @@ How to start a new project:
 4. Review and Change the plan
 
 5. Improve your Process
+
+![Design](<https://github.com/JahongLiu/micro-blog/blob/main/Figma%20Design/Finished%20design.png?raw=true>)
+
+Instructor: Jose Salvatierra
