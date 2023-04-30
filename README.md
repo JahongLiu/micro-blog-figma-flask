@@ -1,5 +1,5 @@
 # micro-blog
-A simple web project to create a micro-blog.
+A simple web project to create a micro-blog. HTML/CSS/Sigma/Flask
 
 How to start a new project:
 
