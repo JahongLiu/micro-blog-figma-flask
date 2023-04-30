@@ -1,5 +1,5 @@
 # micro-blog
-frontend web project 
+A simple web project to create a micro-blog.
 
 How to start a new project:
 
