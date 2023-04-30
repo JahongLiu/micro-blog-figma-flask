@@ -1,2 +1,2 @@
 # micro-blog
-Practicing front end web dev
+Practicing front end web dev html css
