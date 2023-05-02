@@ -2,9 +2,75 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>转码日记</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="navbar">
+      <div class="navbar__brand">
+        <img
+          class="navbar__logo"
+          src="logo.svg"
+          alt="The Microblog logo"
+        />转码日记
+      </div>
+      <ul class="navbar__navigation">
+        <li class="navbar__navigation-item">
+          <a href="#" class="navbar__link">最近</a>
+        </li>
+        <li class="navbar__navigation-item">
+          <a href="#" class="navbar__link">日历</a>
+        </li>
+      </ul>
+    </header>
+    <main class="main">
+      <section>
+        <h1>添加新内容</h1>
+        <form class="form" method="POST">
+          <p class="form__input">
+            <label for="entry" class="form__label">输入内容</label>
+            <textarea
+              name="content"
+              id="entry"
+              class="form__textarea"
+            ></textarea>
+          </p>
+          <button type="submit" class="form__submit">添加</button>
+        </form>
+      </section>
+      <section>
+        <h1>最近日记</h1>
+        {% for entry in entries %}
+        <article class="entry">
+          <div>
+            <h2 class="entry__title">{{ entry[0] | truncate(30, true) }}</h2>
+            <time class="entry__date" datetime="{{ entry[1] }}"
+              >• {{ entry[2] }}</time
+            >
+          </div>
+          <p class="entry__content">{{ entry[0] }}</p>
+        </article>
+        {% endfor %}
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__content">
+        <section class="left">
+          <a class="footer__item">刘家宏</a>
+          <a class="footer__item">看看我的其他项目</a>
+        </section>
+        <section class="right">
+          <div class="footer__column">
+            <a class="footer__item">最近</a>
+            <a class="footer__item">日历</a>
+          </div>
+          <div class="footer__column">
+            <a class="footer__item" href="#">关于</a>
+            <a class="footer__item">怎么做的</a>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </body>
 </html>
