@@ -1,4 +1,4 @@
-# micro-blog
+# micro-blog 转码日记
 A simple web project to create a micro-blog. HTML/CSS/Figma/Flask
 
 How to start a new project:
