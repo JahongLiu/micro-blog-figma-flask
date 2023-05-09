@@ -14,6 +14,5 @@ How to start a new project:
 
 5. Improve your Process
 
-![Design](<https://github.com/JahongLiu/micro-blog/blob/main/Figma%20Design/Finished%20design.png?raw=true>)
+![Design](<[https://github.com/JahongLiu/micro-blog/blob/main/Figma%20Design/Finished%20design.png?raw=true](https://github.com/JahongLiu/micro-blog-figma-flask/blob/main/pic.png?raw=true)>)
 
-Instructor: Jose Salvatierra
